@@ -1,0 +1,17 @@
+{
+  "verbose": false,
+  "ignore": [
+    ".git/*",
+    "node_modules/*",
+    "migrations/*",
+    "client/*"
+  ],
+  "events": {
+    "restart": [
+      "printf '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'"
+    ]
+  },
+  "env": {
+    "NODEMON": "1"
+  }
+}

@@ -1,0 +1,14 @@
+[ignore]
+.*/node_modules/fbjs/.*
+.*/node_modules/react-tap-event-plugin/.*
+client/assets/*/*
+
+[include]
+
+[libs]
+flow/declarations/
+
+[options]
+module.system.node.resolve_dirname=.
+module.system.node.resolve_dirname=node_modules
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe

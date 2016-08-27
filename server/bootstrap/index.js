@@ -1,0 +1,1 @@
+require('server/bootstrap/rollbar');
