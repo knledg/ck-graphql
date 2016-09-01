@@ -63,7 +63,10 @@ module.exports = {
       {test: /\.woff(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url?limit=10000&minetype=application/font-woff'},
       {test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'file'},
       {test: /\.css$/, loader: ExtractTextPlugin.extract('css?sourceMap')},
-      {test: /\.scss$/, loader: ExtractTextPlugin.extract('css?sourceMap!sass?sourceMap!postcss-loader')},
+      {
+        test: /\.scss$/,
+        loaders: [ 'style', 'css?sourceMap', 'sass?sourceMap' ],
+      },
     ],
   },
 };
